@@ -1,0 +1,71 @@
+body {
+    background-color: #f5f5f5;
+}
+
+/* Section title dengan garis kiri kanan */
+.section-title {
+    display: flex;
+    align-items: center;
+    margin: 30px 0 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.section-title::before,
+.section-title::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+}
+
+.section-title span {
+    margin: 0 10px;
+}
+
+/* Link */
+.menu-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+/* Box kecil */
+.thumbnail-box {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: auto;
+    transition: 0.3s;
+}
+
+/* Hover */
+.thumbnail-box:hover {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    cursor: pointer;
+}
+
+/* Klik */
+.thumbnail-box:active {
+    transform: scale(0.95);
+}
+
+/* Gambar kecil */
+.thumbnail-box img {
+    max-width: 65px;
+    max-height: 65px;
+    object-fit: contain;
+}
+
+/* Text */
+p {
+    font-size: 12px;
+    margin-top: 6px;
+    font-weight: 500;
+}
